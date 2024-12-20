@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: 100;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.App {
+    /* display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(auto, 1200px) minmax(20px, 1fr); */
+    
+    font-family: Montserrat-Regular;
+    color: var(--dark-gray2);
+    background-color: white;
+}
+
+.App>* {
+    grid-column: 2;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+ul,
+li,
+a,
+button {
+    all: unset;
+}

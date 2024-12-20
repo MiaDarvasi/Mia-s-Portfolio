@@ -1,0 +1,113 @@
+.app-header {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    place-items: end;
+    align-items: center;
+
+    width: 100%;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+
+    font-family: Montserrat-Regular;
+    color: white;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+}
+
+.app-header .logo {
+    justify-self: start;
+}
+
+
+.app-header h1 {
+    margin-block: 0.9rem;
+    color: white;
+    font-size: 1.1rem;
+    font-family: Montserrat-medium;
+}
+
+.app-header nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-self: center;
+}
+
+.app-header nav a {
+    transition: 0.5s;
+}
+
+.app-header nav a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.app-header button {
+    position: relative;
+    padding: 1rem;
+    border: 0.5px solid white;
+    color: white;
+}
+
+.app-header button:hover {
+    cursor: pointer;
+}
+
+.app-header button::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: rgba(255, 255, 255, 50%);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+.app-header button:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.app-header div:hover {
+    cursor: pointer;
+}
+
+.app-header .logo img {
+    max-width: 2.5rem;
+    height: auto;
+    filter: invert();
+}
+
+.app-header.scrolled {
+    background-color: white;
+    transition: 0.5s;
+    color: var(--dark-gray2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app-header.scrolled .logo {
+    filter: invert(75%);
+}
+
+.app-header.scrolled button {
+    color: var(--dark-gray2);
+    border: 0.5px solid var(--dark-gray2);
+}
+
+.app-header.scrolled button::before {
+    background: rgba(183, 183, 183, 0.5);
+}
+
+@media (max-width: 650px) {
+    nav {
+        display: none;
+    }
+}
