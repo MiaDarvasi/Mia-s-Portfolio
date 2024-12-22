@@ -1,0 +1,82 @@
+/* .home-page .parallax {
+    background: url('../../imgs/test8.jpg') repeat fixed 100%;
+    background-size: cover;
+    background-position: bottom;
+    color: aliceblue;
+    max-height: 80vh;
+    text-align: center;
+    filter: saturate(70%) brightness(110%) contrast(80%) grayscale(20%);
+} */
+
+.home-page .parallax-1 {
+    background: url('../../imgs/landscape1.jpg') repeat fixed 100%;
+    background-size: cover;
+    color: white;
+    /* max-height: 60vh; */
+    width: 100%;
+    filter: saturate(90%) brightness(110%) contrast(80%) grayscale(10%);
+}
+/* 
+.home-page .parallax-2 {
+    background: url('../../imgs/landscape2.jpg') repeat fixed 100%;
+    background-size: cover;
+    color: aliceblue;
+    max-height: 60vh;
+    filter: saturate(80%) brightness(110%) contrast(80%) grayscale(10%);
+
+}
+
+.home-page .parallax-inner {
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.home-page h3 {
+    margin: 1rem;
+} */
+/* 
+.home-page .parallax h1 {
+    text-align: center;
+    font-size: 4rem;
+} */
+
+/* 
+.home-page .parallax-1 h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-inline: 5rem;
+    padding-block: 1rem;
+    background: linear-gradient(to right, rgba(205, 205, 205, 0.5) 0%, rgba(205, 205, 205, 0) 30%, rgba(205, 205, 205, 0.5) 100%);
+    font-family: Montserrat-Bold;
+} */
+
+
+
+
+.home-page .parallax {
+    background: url('../../imgs/test9.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    filter: saturate(70%) brightness(110%) contrast(80%) grayscale(20%) sepia(10%);
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.home-page .parallax-inner {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.home-page h3 {
+    margin: 1rem;
+}
+
+.home-page .parallax h1 {
+    text-align: center;
+    font-size: 4rem;
+} 
+

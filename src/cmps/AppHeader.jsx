@@ -36,21 +36,23 @@ export function AppHeader() {
 
     return (
         <section className={`app-header ${isScrolled ? 'scrolled' : ''}`}>
-            <div className='logo'>
-                <Link to="/">
-                    <img src={logo} />
-                </Link>
-            </div>
+            <section className='app-header-content'>
+                <div className='logo'>
+                    <Link to="/">
+                        <img src={logo} />
+                    </Link>
+                </div>
 
-            {showNav && !isMobile && (
-                <nav>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                </nav>
-            )}
+                {showNav && !isMobile && (
+                    <nav>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                    </nav>
+                )}
 
-            <a href="#connect"><button>Let's Connect</button></a>
+                <a href="#connect"><button>Let's Connect</button></a>
+            </section>
         </section>
     );
 }

@@ -1,0 +1,85 @@
+.services {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(auto, 1350px) minmax(20px, 1fr);
+}
+
+.services>* {
+    grid-column: 2;
+}
+
+.services .services-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    padding-block-end: 1rem;
+    color: var(--dark-gray2);
+}
+
+.services .services-title h1 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-block-end: 2.5rem;
+}
+
+.services .services-title h1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -1rem;
+    width: 45%;
+    height: 2px;
+    background-color: var(--dark-gray2);
+}
+
+.services .services-title h1::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -1rem;
+    width: 45%;
+    height: 2px;
+    background-color: var(--dark-gray2);
+}
+
+.services .services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.services .services-list h2 {
+    font-size: 1.3rem;
+    font-family: Montserrat-Regular;
+}
+
+.services .services-list .sevices-exmp {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.services .button-with-arrow {
+    position: relative;
+    left: 85%;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-block-start: 2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Style the arrow */
+.services .arrow {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* On hover, move the arrow slightly */
+.services .button-with-arrow:hover .arrow {
+    transform: translateX(5px);
+    /* Move the arrow 5px to the right */
+}

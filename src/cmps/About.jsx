@@ -1,39 +1,16 @@
+
 export function About() {
-    return (
-        <>
-            <section className="home-page">
-                <section className="section-1">
-                    <section className="parallax">
-                        <div className="parallax-inner">
-                            <br />
-                            <h1>Mia Darvasi</h1>
-                            <p>Web Developer | Web Design</p>
-                            <br />
-                        </div>
-                    </section>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima fuga debitis quasi eius aliquid sapiente? Cumque blanditiis quibusdam, ex totam aliquam provident alias culpa, sit illo, eum doloribus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit voluptatum aperiam pariatur numquam praesentium recusandae, ipsa at iusto eveniet, distinctio sunt dolore nemo veniam maiores vitae deserunt cum ducimus.</h3>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima fuga debitis quasi eius aliquid sapiente? Cumque blanditiis quibusdam, ex totam aliquam provident alias culpa, sit illo, eum doloribus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit voluptatum aperiam pariatur numquam praesentium recusandae, ipsa at iusto eveniet, distinctio sunt dolore nemo veniam maiores vitae deserunt cum ducimus.</h3>
-                    <section className="parallax-1">
-                        <div className="parallax-inner">
-                            <br />
-                            <h1>Beaches</h1>
-                            <br />
-                        </div>
-                    </section>
-                </section><section className="section-2">
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima fuga debitis quasi eius aliquid sapiente? Cumque blanditiis quibusdam, ex totam aliquam provident alias culpa, sit illo, eum doloribus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit voluptatum aperiam pariatur numquam praesentium recusandae, ipsa at iusto eveniet, distinctio sunt dolore nemo veniam maiores vitae deserunt cum ducimus.</h3>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima fuga debitis quasi eius aliquid sapiente? Cumque blanditiis quibusdam, ex totam aliquam provident alias culpa, sit illo, eum doloribus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit voluptatum aperiam pariatur numquam praesentium recusandae, ipsa at iusto eveniet, distinctio sunt dolore nemo veniam maiores vitae deserunt cum ducimus.</h3>
-                    <section className="parallax-2">
-                        <div className="parallax-inner">
-                            <br />
-                            <h1>Mountains</h1>
-                            <br />
-                        </div>
-                    </section>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima fuga debitis quasi eius aliquid sapiente? Cumque blanditiis quibusdam, ex totam aliquam provident alias culpa, sit illo, eum doloribus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit voluptatum aperiam pariatur numquam praesentium recusandae, ipsa at iusto eveniet, distinctio sunt dolore nemo veniam maiores vitae deserunt cum ducimus.</h3>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima fuga debitis quasi eius aliquid sapiente? Cumque blanditiis quibusdam, ex totam aliquam provident alias culpa, sit illo, eum doloribus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit voluptatum aperiam pariatur numquam praesentium recusandae, ipsa at iusto eveniet, distinctio sunt dolore nemo veniam maiores vitae deserunt cum ducimus.</h3>
-                </section>
-            </section>
-        </>
-    )
+    return <section className="about" id="about">
+        <section className="about-content">
+            <h1>ABOUT ME</h1>
+            <p>
+                I’m a software developer with a passion for web design, focusing on creating and maintaining websites and web applications.
+                Originally from England and now based in Israel, I served as a commander in the Israeli Navy (IDF), where I gained valuable leadership and discipline that have shaped both my professional and personal life.
+                While I studied biology at Hebrew University, my true interest lies in technology, and I’ve since focused on building efficient and intuitive web solutions.
+                <br />
+                <br />
+                I thrive in team environments, enjoying collaboration and contributing to projects through clear communication and dedication. Outside of work, I love traveling, hiking, skiing, and spending time in nature. Photography is another passion of mine, allowing me to capture the world from unique perspectives. With a strong technical foundation and a people-oriented approach, I’m committed to creating effective, professional web experiences.
+            </p>
+        </section>
+    </section>
 }

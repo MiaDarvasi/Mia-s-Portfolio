@@ -1,10 +1,10 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-weight: 100;
-  font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -13,9 +13,6 @@ html {
 
 
 .App {
-    /* display: grid;
-    grid-template-columns: minmax(20px, 1fr) minmax(auto, 1200px) minmax(20px, 1fr); */
-    
     font-family: Montserrat-Regular;
     color: var(--dark-gray2);
     background-color: white;
@@ -34,4 +31,8 @@ li,
 a,
 button {
     all: unset;
+}
+
+h1 {
+    font-family: Montserrat-Medium;
 }
