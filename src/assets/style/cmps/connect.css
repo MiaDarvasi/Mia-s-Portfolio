@@ -1,12 +1,38 @@
 .connect {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(auto, 1350px) minmax(20px, 1fr);
+    text-align: justify;
+    position: relative;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-block-start: 3rem;
+}
+
+.connect>* {
+    grid-column: 1 / 3;
+}
+
+.connect-container {
+    display: grid;
+    gap: 3rem;
+}
+
+.connect .connect-main-img {
+    width: 100%;
+    max-width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.connect .connect-content {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
     display: flex;
     flex-direction: column;
-    place-items: center;
-    gap: 1rem;
-    /* background-color: var(--main-dark); */
-    background: linear-gradient(to bottom, transparent, var(--main-dark));
-    padding-block: 5rem;
-    margin-block-start: 7rem;
+    justify-content: center;
+    place-items: start;
 }
 
 .connect h1,
@@ -16,33 +42,44 @@
 
 .connect h1 {
     font-family: Montserrat-Medium;
+    font-size: 3rem;
+}
+
+.connect p {
+    font-size: 1.2rem;
 }
 
 .connect .social {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding-inline: 1rem;
 }
 
 .connect .social img {
     border-radius: 50%;
     padding: 0.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 3rem;
+    max-height: 3rem;
+    object-fit: contain;
 }
 
 .connect .social a {
-    cursor: pointer;
-    background: rgba(217, 217, 217, 0.1);
-    display: inline-flex;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
     position: relative;
     overflow: hidden;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
     width: 3rem;
     height: 3rem;
+
+    cursor: pointer;
+    border: 1px solid var(--dark-gray2);
+    border-radius: 50%;
+    margin-inline-end: 1rem;
+    margin-block-start: 1rem;
+    line-height: 1;
 }
 
 .connect .social a::before {
@@ -50,7 +87,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(255, 255, 255, 50%);
+    background-color: var(--dark-gray2);
     border-radius: 50%;
     transform: scale(0);
     transition: 0.3s ease-in-out;
@@ -62,13 +99,7 @@
     transform: scale(1);
 }
 
-.connect img {
-    max-width: 3rem;
-    max-height: 3rem;
-    object-fit: contain;
-}
-
-.connect img:hover {
+.connect .social img:hover {
     cursor: pointer;
     filter: saturate(0) brightness(1000%);
 }

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
-import logo from '../assets/imgs/mylogoclean.png'
+import logo from '../assets/imgs/mylogoclean.png';
 
 export function AppHeader() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -32,22 +33,22 @@ export function AppHeader() {
         };
     }, []);
 
-    const showNav = location.pathname === "/";
+    const headerClass = `app-header ${isScrolled || location.pathname !== "/" ? 'scrolled' : ''}`;
 
     return (
-        <section className={`app-header ${isScrolled ? 'scrolled' : ''}`}>
+        <section className={headerClass}>
             <section className='app-header-content'>
                 <div className='logo'>
                     <Link to="/">
-                        <img src={logo} />
+                        <img src={logo} alt="Logo" />
                     </Link>
                 </div>
 
-                {showNav && !isMobile && (
+                {!isMobile && (
                     <nav>
-                        <a href="#about">About</a>
-                        <a href="#services">Services</a>
-                        <a href="#projects">Projects</a>
+                        <HashLink to="/#about">About</HashLink>
+                        <HashLink to="/#services">Services</HashLink>
+                        <HashLink to="/#projects">Projects</HashLink>
                     </nav>
                 )}
 

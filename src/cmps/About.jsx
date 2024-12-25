@@ -1,4 +1,3 @@
-
 export function About() {
     return <section className="about" id="about">
         <section className="about-content">

@@ -20,8 +20,10 @@ export function AbnbDetails() {
             <h1>ABNB</h1>
             <h2>Airbnb clone app</h2>
             <p>A fully responsive, end-to-end Airbnb clone developed with React, Node.js, and MongoDB. The application features a dynamic and intuitive user interface, allowing users to browse listings, manage bookings, and interact with real-time data. A significant amount of data is efficiently managed in MongoDB, ensuring scalability and flexibility in handling user information, listings, and transactions. The app utilizes RESTful APIs for seamless communication between the front-end and back-end, while WebSockets provide real-time updates, ensuring users always have the latest information. Built collaboratively, this project demonstrates expertise in full-stack development, with a focus on performance, user experience, and real-time functionality.</p>
-            <a href="https://github.com/avivdb/Abnb-frontend" target="blank" title="Frontend"><img src={git} /></a>
-            <a href="https://github.com/AdiSabban10/Abnb-backend" target="blank" title="Backend"><img src={git} /></a>
+            <section>
+                <a href="https://github.com/avivdb/Abnb-frontend" target="blank" title="Frontend"><img src={git} /></a>
+                <a href="https://github.com/AdiSabban10/Abnb-backend" target="blank" title="Backend"><img src={git} /></a>
+            </section>
             <ul className="gallery">
                 <li className="gallery-item">
                     <h3>Responsive Homepage</h3>

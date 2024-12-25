@@ -62,6 +62,7 @@
     padding: 1rem;
     border: 0.5px solid white;
     color: white;
+    grid-column: 1;
 }
 
 .app-header button:hover {
@@ -143,5 +144,15 @@
 @media (max-width: 650px) {
     nav {
         display: none;
+    }
+
+    .app-header .app-header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .app-header button {
+        padding-block: 0.5rem;
     }
 }

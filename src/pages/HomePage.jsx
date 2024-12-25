@@ -38,7 +38,7 @@ export function HomePage() {
                             <button onClick={scrollToAbout}>▼</button>
                         </div>
                     </section>
-                    <About id="about" />
+                    <About />
                     <Skills />
                     <section className="parallax-1">
                         <div className="parallax-1-inner">

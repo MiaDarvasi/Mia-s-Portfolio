@@ -1,19 +1,20 @@
 .project-details {
-    margin-inline: 1rem;
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(auto, 1350px) minmax(20px, 1fr);
+    text-align: justify;
+    color: var(--dark-gray2);
 }
 
-.project-details p {
-    text-align: justify;
+.project-details>* {
+    grid-column: 2;
 }
 
 .project-main-img {
-    max-height: 60vh;
-    max-width: 90%;
-    width: auto;
+    width: 100%;
+    height: auto;
     object-fit: contain;
-    margin-inline: 1rem;
-    margin-block-start: 7%;
-    border-radius: 20px;
+    margin-block-start: 6rem;
+    border: 1px solid var(--light-gray1);
 }
 
 .project-details h1 {
@@ -31,8 +32,12 @@
     margin-block: 0.5rem;
 }
 
+.project-details h3 {
+    margin-block-end: 2rem;
+}
+
 .project-details p {
-    font-family: Montserrat-Thin;
+    font-family: Montserrat-Light;
     font-size: 0.9rem;
 }
 
@@ -56,24 +61,25 @@
     height: auto;
     max-height: 200px;
     object-fit: contain;
-    border-radius: 10px;
+    border: 1px solid var(--light-gray1);
 }
 
 .project-details a {
     position: relative;
     overflow: hidden;
-    
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    
+
     width: 3rem;
     height: 3rem;
-    
+
     cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--dark-gray2);
     border-radius: 50%;
     margin-inline-end: 1rem;
+    margin-block-start: 2rem;
     line-height: 1;
 }
 
@@ -82,7 +88,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(255, 255, 255, 50%);
+    background-color: var(--dark-gray2);
     border-radius: 50%;
     transform: scale(0);
     transition: 0.3s ease-in-out;
