@@ -6,7 +6,6 @@ import appsushomepage from "../assets/imgs/projects/Appsus/appsushomepage.jpg";
 
 
 
-
 export function Projects() {
     return <section className="projects" id="projects">
         <h1>PROJECTS</h1>

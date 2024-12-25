@@ -16,6 +16,7 @@ html {
     font-family: Montserrat-Regular;
     color: var(--dark-gray2);
     background-color: white;
+    line-height: 1.7;
 }
 
 .App>* {

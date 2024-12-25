@@ -1,5 +1,4 @@
 .about {
-    text-align: start;
     display: grid;
     grid-template-columns: minmax(20px, 1fr) minmax(auto, 1350px) minmax(20px, 1fr);
     padding-block: 3rem;
@@ -11,6 +10,7 @@
 }
 
 .about h1 {
+    width: max-content;
     display: inline-block;
     position: relative;
     font-size: 1.1rem;

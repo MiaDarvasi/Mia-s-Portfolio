@@ -1,20 +1,22 @@
 .skills {
-    background-image: url('../../imgs/skillsblob.svg');
-    background-size: contain;
-    background-position: start;
-    background-repeat: no-repeat;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-    padding: 5rem;
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(auto, 1350px) minmax(20px, 1fr);
+    padding-block-start: 3rem;
+    text-align: justify;
+    place-items: center;
+}
+
+.skills>* {
+    grid-column: 2;
 }
 
 .skills h1 {
+    justify-self: start;
     display: inline-block;
     position: relative;
     font-size: 1.1rem;
-    margin-block-end: 3rem;
-    margin: 0;
-    margin-block-end: 3rem;
+    text-align: start;
+    margin-block-end: 2.2rem;
 }
 
 .skills h1::after {
@@ -24,36 +26,25 @@
     bottom: -1rem;
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: var(--dark-gray2);
 }
 
 .skills h2 {
     font-size: 1rem;
 }
 
-.skills ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.skills ul li p {
-    font-family: Montserrat-Thin;
-}
-
-
 .skill-slider {
-    width: 80%;
-    height: 200px;
-    margin: 0 auto;
-    margin-block-end: 5rem;
-    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-block-start: 4rem;
+    margin-block-end: 2rem;
 }
 
 .skill-slider .item  {
     display: flex;
     flex-direction: column;
     place-items: center;
+    text-align: center;
 }
 
 .skill-slider .item h5 {
@@ -63,9 +54,23 @@
 .skill-slider .item img {
     width: 30%;
     height: auto;
-    max-height: 10rem;
-    max-width: 10rem;
+    max-height: 2.5rem;
+    max-width: 2.5rem;
     margin: 0 auto 15px auto;
+}
+
+.react-multiple-carousel__arrow {
+    top: 10% !important;
+    scale: 0.7;
+    z-index: 1 !important;
+}
+
+.react-multiple-carousel__arrow--right {
+    right: 0 !important;
+}
+
+.react-multiple-carousel__arrow--left {
+    left: 0 !important;
 }
 
 @media (max-width: 650px) {

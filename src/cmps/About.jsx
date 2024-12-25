@@ -5,7 +5,7 @@ export function About() {
             <h1>ABOUT ME</h1>
             <p>
                 I’m a software developer with a passion for web design, focusing on creating and maintaining websites and web applications.
-                Originally from England and now based in Israel, I served as a commander in the Israeli Navy (IDF), where I gained valuable leadership and discipline that have shaped both my professional and personal life.
+                Born in England and now based in Israel, I served as a commander in the Israeli Navy (IDF), where I gained leadership skills and discipline that have shaped both my professional and personal life.
                 While I studied biology at Hebrew University, my true interest lies in technology, and I’ve since focused on building efficient and intuitive web solutions.
                 <br />
                 <br />

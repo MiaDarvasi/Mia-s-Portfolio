@@ -105,7 +105,7 @@ export function Services() {
     }, [isListening]); // Dependency array ensures that the listener is added/removed correctly
 
     return (
-        <section className="services">
+        <section className="services" id="services">
             <section className="services-container">
                 <section className="services-title">
                     <h1
@@ -137,15 +137,14 @@ export function Services() {
                         <p>Designing interfaces that are intuitive, efficient, and enjoyable to use.</p>
                     </div>
                 </section>
-                {/* <a href="#connect"><button>Hear More</button></a> */}
-                <a href="#connect">
-                    <button className="button-with-arrow">
+                <button className="button-with-arrow">
+                    <a href="#connect">
                         Hear More
                         <svg className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                             <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
-                    </button>
-                </a>
+                    </a>
+                </button>
             </section>
         </section>
     );

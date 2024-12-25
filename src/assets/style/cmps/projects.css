@@ -1,6 +1,13 @@
 .projects {
-    margin-inline: 1rem;
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(auto, 1350px) minmax(20px, 1fr);
+    place-items: center;
+    max-width: 100%;
     margin-block: 5rem;
+}
+
+.projects>* {
+    grid-column: 2;
 }
 
 .projects h1 {

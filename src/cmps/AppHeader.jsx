@@ -46,7 +46,7 @@ export function AppHeader() {
                 {showNav && !isMobile && (
                     <nav>
                         <a href="#about">About</a>
-                        <a href="#skills">Skills</a>
+                        <a href="#services">Services</a>
                         <a href="#projects">Projects</a>
                     </nav>
                 )}

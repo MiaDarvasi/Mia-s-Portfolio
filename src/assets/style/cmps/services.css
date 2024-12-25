@@ -1,6 +1,8 @@
 .services {
     display: grid;
     grid-template-columns: minmax(20px, 1fr) minmax(auto, 1350px) minmax(20px, 1fr);
+    place-items: center;
+    max-width: 100%;
 }
 
 .services>* {
@@ -8,10 +10,17 @@
 }
 
 .services .services-container {
-    background-color: rgba(255, 255, 255, 0.8);
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 2rem;
     padding-block-end: 1rem;
     color: var(--dark-gray2);
+}
+
+.services .services-title {
+    width: 100%;
 }
 
 .services .services-title h1 {
@@ -59,10 +68,9 @@
 }
 
 .services .button-with-arrow {
-    position: relative;
-    left: 85%;
-    display: inline-flex;
-    align-items: center;
+    justify-self: end;
+    display: flex;
+    place-items: center;
     padding: 0.8rem 1.2rem;
     background-color: rgba(0, 0, 0, 0.8);
     border: none;
@@ -72,14 +80,35 @@
     transition: transform 0.3s ease;
 }
 
-/* Style the arrow */
+.services .button-with-arrow a {
+    display: flex;
+    place-items: center;
+}
+
 .services .arrow {
     margin-left: 8px;
     transition: transform 0.3s ease;
 }
 
-/* On hover, move the arrow slightly */
 .services .button-with-arrow:hover .arrow {
     transform: translateX(5px);
-    /* Move the arrow 5px to the right */
+}
+
+@media (max-width: 650px) {
+    .services .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    .services .services-title h1::after {
+        width: 32%;
+    }
+    
+    .services .services-title h1::before {
+        width: 32%;
+    }
+
+    .services .button-with-arrow {
+        margin-block-start: 4rem;
+    }
+    
 }
