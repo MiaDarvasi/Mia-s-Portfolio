@@ -68,4 +68,8 @@
         align-items: center;
     }
 
+    .home-page .parallax-1 {
+        background: url('../../imgs/testLP/africa2mobile.jpg') repeat fixed 100%;
+    }
+
 }
