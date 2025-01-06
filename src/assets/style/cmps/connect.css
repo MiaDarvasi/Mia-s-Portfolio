@@ -23,6 +23,7 @@
     object-fit: cover;
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: brightness(150%) saturate(50%) contrast(0.9);
 }
 
 .connect .connect-content {

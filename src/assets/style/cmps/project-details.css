@@ -12,6 +12,7 @@
 .project-main-img {
     width: 100%;
     height: auto;
+    max-height: 70vh;
     object-fit: contain;
     margin-block-start: 6rem;
     border: 1px solid var(--light-gray1);
@@ -49,9 +50,10 @@
 }
 
 .project-details .gallery-item-imgs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    gap: 3rem;
     align-items: center;
     justify-items: start;
 }
@@ -114,6 +116,7 @@
 
 @media (max-width: 650px) {
     .project-details .gallery-item-imgs {
+        display: grid;
         grid-template-columns: 1fr;
         grid-auto-flow: row;
     }

@@ -6,6 +6,7 @@ import { AbnbDetails } from './pages/AbnbDetails.jsx';
 import { AppsusDetails } from './pages/AppsusDetails.jsx';
 import { HomePage } from './pages/HomePage.jsx'
 import { ScrollToTop } from './cmps/ScrollToTop.jsx';
+import { MayuwayDetails } from './pages/MayuwayDetails.jsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/abnb" element={<AbnbDetails />} />
           <Route path="/appsus" element={<AppsusDetails />} />
+          <Route path="/mayuway" element={<MayuwayDetails />} />
         </Routes>
         <Connect />
       </div>
