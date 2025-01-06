@@ -1,6 +1,7 @@
 .project-details {
     display: grid;
     grid-template-columns: minmax(20px, 1fr) minmax(auto, 1350px) minmax(20px, 1fr);
+
     text-align: justify;
     color: var(--dark-gray2);
 }
@@ -14,6 +15,7 @@
     height: auto;
     max-height: 70vh;
     object-fit: contain;
+
     margin-block-start: 6rem;
     border: 1px solid var(--light-gray1);
 }
@@ -21,16 +23,18 @@
 .project-details h1 {
     position: relative;
     display: inline-block;
-    font-size: 1.1rem;
+
     margin: 0;
     margin-block-start: 2rem;
+
+    font-size: 1.1rem;
     font-family: Montserrat-Medium;
 }
 
 .project-details h2 {
-    font-family: Montserrat-Thin;
     margin: 0;
     margin-block: 0.5rem;
+    font-family: Montserrat-Thin;
 }
 
 .project-details h3 {
@@ -46,12 +50,11 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+
     margin-block-start: 3rem;
 }
 
 .project-details .gallery-item-imgs {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
     display: flex;
     gap: 3rem;
     align-items: center;
@@ -63,6 +66,7 @@
     height: auto;
     max-height: 200px;
     object-fit: contain;
+
     border: 1px solid var(--light-gray1);
 }
 
@@ -87,15 +91,17 @@
 
 .project-details a::before {
     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
     height: 100%;
-    position: absolute;
+
     background-color: var(--dark-gray2);
     border-radius: 50%;
     transform: scale(0);
     transition: 0.3s ease-in-out;
-    top: 0;
-    left: 0;
 }
 
 .project-details a:hover::before {
@@ -106,12 +112,49 @@
     max-width: 3rem;
     max-height: 3rem;
     object-fit: contain;
+
     padding: 0.5rem;
 }
 
 .project-details a img:hover {
     cursor: pointer;
     filter: saturate(0) brightness(1000%);
+}
+
+
+.project-details .project-link {
+    all: unset;
+    grid-column: 2;
+    
+    display: flex;
+    align-items: center;
+
+    margin-block-start: 1rem;
+    font-family: Montserrat-Medium;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    transition: color 0.3s ease;
+}
+
+.project-details .project-link::before {
+    all: unset;
+}
+
+.project-details .project-link .arrow {
+    margin-left: 8px;
+    font-size: 0.5rem;
+    transition: transform 0.3s ease;
+    position: relative;
+    top: 0.05rem;
+}
+
+.project-details .project-link:hover {
+    cursor: pointer;
+    color: var(--dark-gray4);
+}
+
+.project-details .project-link:hover .arrow {
+    transform: translateX(5px);
 }
 
 @media (max-width: 650px) {

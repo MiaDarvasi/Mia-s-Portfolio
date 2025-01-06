@@ -1,8 +1,9 @@
 .projects {
     display: grid;
     grid-template-columns: minmax(20px, 1fr) minmax(auto, 1350px) minmax(20px, 1fr);
-    /* place-items: center; */
+
     max-width: 100%;
+
     margin-block: 5rem;
     text-align: justify;
 }
@@ -12,12 +13,14 @@
 }
 
 .projects h1 {
-    width: max-content;
-    display: inline-block;
     position: relative;
+    display: inline-block;
+
+    width: max-content;
+
+    margin-block-end: 2.2rem;
     font-size: 1.1rem;
     text-align: start;
-    margin-block-end: 2.2rem;
 }
 
 .projects h1::after {
@@ -25,8 +28,10 @@
     position: absolute;
     left: 0;
     bottom: -1rem;
+
     width: 100%;
     height: 2px;
+
     background-color: var(--dark-gray2);
     align-self: start;
 }
@@ -38,17 +43,18 @@
 .projects ul {
     display: grid;
     gap: 1rem;
+
     margin-block-end: 1.5rem;
 }
 
 .project {
     position: relative;
+
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-items: start;
     align-items: center;
     gap: 2rem;
-    /* margin-block-start: 3rem; */
 }
 
 .project .project-info {
@@ -70,8 +76,10 @@
 .projects h4 {
     position: relative;
     width: max-content;
-    font-size: 1rem;
+
     margin-block: 3rem;
+    
+    font-size: 1rem;
     font-family: Montserrat-Medium;
 }
 
@@ -80,27 +88,32 @@
     position: absolute;
     left: 0;
     bottom: -0.5rem;
+
+    align-self: start;
     width: 20%;
     height: 2px;
+
     background-color: var(--dark-gray2);
-    align-self: start;
 }
 
 .project .project-link {
+    display: flex;
+    align-items: center;
+
     font-family: Montserrat-Medium;
     text-transform: uppercase;
     font-size: 0.7rem;
-    display: flex;
-    align-items: center;
+
     transition: color 0.3s ease;
 }
 
 .project .project-link .arrow {
+    position: relative;
+    top: 0.05rem;
+
     margin-left: 8px;
     font-size: 0.5rem;
     transition: transform 0.3s ease;
-    position: relative;
-    top: 0.05rem;
 }
 
 .project .project-link:hover {
@@ -109,15 +122,17 @@
 }
 
 .project .project-link:hover .arrow {
-    transform: translateX(5px); /* Move the arrow slightly to the right */
+    transform: translateX(5px);
 }
 
 .project-image {
     position: relative;
     display: inline-block;
+
     max-width: 400px;
     height: auto;
     overflow: hidden; 
+
     background-color: white;
     cursor: pointer;
 }
@@ -126,6 +141,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
     transition: opacity 0.3s ease;
     border: 1px solid var(--light-gray1);
 }
@@ -134,8 +150,10 @@
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
+
     background: linear-gradient(to bottom, rgba(207, 207, 207, 0.8), rgba(255, 255, 255, 0.8));
     transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
@@ -161,15 +179,17 @@
 
 .project .project-info .project-git-link::before {
     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
     height: 100%;
-    position: absolute;
+
     background-color: var(--dark-gray2);
     border-radius: 50%;
     transform: scale(0);
     transition: 0.3s ease-in-out;
-    top: 0;
-    left: 0;
 }
 
 .project .project-info .project-git-link:hover::before {
@@ -180,6 +200,7 @@
     max-width: 3rem;
     max-height: 3rem;
     object-fit: contain;
+    
     padding: 0.5rem;
 }
 

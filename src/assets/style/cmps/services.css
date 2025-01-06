@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: minmax(20px, 1fr) minmax(auto, 1350px) minmax(20px, 1fr);
     place-items: center;
+
     max-width: 100%;
 }
 
@@ -13,6 +14,7 @@
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
+
     background-color: rgba(255, 255, 255, 0.6);
     padding: 2rem;
     padding-block-end: 1rem;
@@ -24,9 +26,10 @@
 }
 
 .services .services-title h1 {
+    margin-block-end: 2.5rem;
+
     font-size: 1.1rem;
     text-align: center;
-    margin-block-end: 2.5rem;
 }
 
 .services .services-title h1::after {
@@ -34,8 +37,10 @@
     position: absolute;
     top: 50%;
     right: -1rem;
+
     width: 45%;
     height: 2px;
+
     background-color: var(--dark-gray2);
 }
 
@@ -44,8 +49,10 @@
     position: absolute;
     top: 50%;
     left: -1rem;
+
     width: 45%;
     height: 2px;
+
     background-color: var(--dark-gray2);
 }
 
@@ -71,12 +78,13 @@
     justify-self: end;
     display: flex;
     place-items: center;
+
     padding: 0.8rem 1.2rem;
+    margin-block-start: 2rem;
     background-color: rgba(0, 0, 0, 0.8);
     border: none;
     color: white;
     cursor: pointer;
-    margin-block-start: 2rem;
     transition: transform 0.3s ease;
 }
 

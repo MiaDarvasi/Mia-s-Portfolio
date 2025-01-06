@@ -16,6 +16,10 @@ export function MayuwayDetails() {
             <h1>MayuWay</h1>
             <h2>Yoga Instructor Portfolio</h2>
             <p>A seamless web platform developed in React and Vite for a Yoga instructor, featuring responsive design and dynamic components that adapt smoothly across all devices. The application incorporates multiple interconnected pages with intuitive navigation, selected third-party libraries and engaging animations. Custom-built UI elements and thoughtful state management ensure a fluid user experience, whether visitors are exploring the site on their phones or desktop browsers.</p>
+            <a className="project-link" href="https://mayuway.netlify.app/" target="_blank" >
+                Explore the Website
+                <span className="arrow">►</span>
+            </a>
             <section>
                 <a href="https://github.com/MiaDarvasi/MayuWay.git" target="blank" title="MayuWay"><img src={git} /></a>
             </section>

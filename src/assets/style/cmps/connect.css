@@ -1,8 +1,10 @@
 .connect {
+    position: relative;
+
     display: grid;
     grid-template-columns: minmax(20px, 1fr) minmax(auto, 1350px) minmax(20px, 1fr);
+
     text-align: justify;
-    position: relative;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     margin-block-start: 3rem;
 }
@@ -21,6 +23,7 @@
     max-width: 100%;
     height: 70vh;
     object-fit: cover;
+
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     filter: brightness(150%) saturate(50%) contrast(0.9);
@@ -30,6 +33,7 @@
     position: absolute;
     bottom: 10%;
     right: 10%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,11 +61,12 @@
 }
 
 .connect .social img {
-    border-radius: 50%;
-    padding: 0.5rem;
     max-width: 3rem;
     max-height: 3rem;
     object-fit: contain;
+
+    border-radius: 50%;
+    padding: 0.5rem;
 }
 
 .connect .social a {
@@ -85,15 +90,17 @@
 
 .connect .social a::before {
     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
     height: 100%;
-    position: absolute;
+    
     background-color: var(--dark-gray2);
     border-radius: 50%;
     transform: scale(0);
     transition: 0.3s ease-in-out;
-    top: 0;
-    left: 0;
 }
 
 .connect .social a:hover::before {
