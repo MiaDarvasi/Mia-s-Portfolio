@@ -37,10 +37,6 @@
     font-family: Montserrat-Thin;
 }
 
-.project-details h3 {
-    margin-block-end: 2rem;
-}
-
 .project-details p {
     font-family: Montserrat-Light;
     font-size: 0.9rem;
@@ -52,6 +48,13 @@
     gap: 3rem;
 
     margin-block-start: 3rem;
+}
+
+.project-details .gallery-item {
+    margin-block-start: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .project-details .gallery-item-imgs {
@@ -121,7 +124,6 @@
     filter: saturate(0) brightness(1000%);
 }
 
-
 .project-details .project-link {
     all: unset;
     grid-column: 2;
@@ -155,6 +157,12 @@
 
 .project-details .project-link:hover .arrow {
     transform: translateX(5px);
+}
+
+.project-details .project-warning {
+    font-family: Montserrat-Medium;
+    font-size: 0.6rem;
+    margin-block-start: 1rem;
 }
 
 @media (max-width: 650px) {

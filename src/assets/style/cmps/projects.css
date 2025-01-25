@@ -217,6 +217,11 @@
     opacity: 0.3;
 }
 
+.project .project-warning {
+    font-family: Montserrat-Medium;
+    font-size: 0.6rem;
+}
+
 @media (max-width: 650px) {
     .project {
         grid-template-columns: 1fr;

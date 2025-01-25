@@ -52,7 +52,7 @@ export function AppHeader() {
                     </nav>
                 )}
 
-                <a href="#connect"><button>Let's Connect</button></a>
+                <a href="#connect"><button>Get In Touch</button></a>
             </section>
         </section>
     );
