@@ -25,7 +25,7 @@ export function Projects() {
                         <h2>Ginat Tamar</h2>
                     </Link>
                     <h3>Commercial Website for a Plant Nursery</h3>
-                    <p>A visually engaging, fully responsive commercial website built with React, showcasing a plant nursery’s products and services. Designed with a focus on user experience, it offers smooth navigation and an immersive, plant-themed aesthetic, ensuring both functionality and style across all devices."</p>
+                    <p>A visually engaging, fully responsive commercial website built with React, showcasing a plant nursery’s products and services. Designed with a focus on user experience, it offers smooth navigation and an immersive, plant-themed aesthetic, ensuring both functionality and style across all devices.</p>
                     <p className="project-warning">* This website is still under development and ongoing improvements. if you see any problems, please contact me (:</p>
                     <a className="project-link" href="https://ginattamartemp.netlify.app/" target="_blank" >
                         Explore the Website
